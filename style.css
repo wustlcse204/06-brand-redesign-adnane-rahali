@@ -1,18 +1,57 @@
 /* navbar */
 /* Intro */
 #intro{
-    margin-top: 5%;
+    margin-top: 10%;
 }
 #intro input{
     text-align: center;
 }
 /* hero 1 */
 .hero1{
-    margin-top: 5%;
+    margin-top: 10%;
     background-image: url("./images/hero111.png");
     background-size: cover;
     border: 1px solid black;
 }
 .hero1 #content{
     padding-top: 10%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+
+}
+.hero1 li{
+    list-style: none;
+}
+.hero1 i{
+    padding-right: 20px;
+    color: #DEA01E;
+}
+/* Prices */
+.prices{
+    margin-top: 10%;
+}
+.prices .card-header h6{
+    font-weight: bold;
+    font-size: 20px;
+}
+.prices .card-header p{
+    font-weight: bold;
+    font-size: 30px;
+}
+.prices .card-body{
+    padding: 10% 10%;
+    font-size: 20px;
+}
+.prices .card-body h6{
+    font-weight: bold;
+    color: #7493BC;
+    font-size: 20px;
+
+}
+.prices li{
+    list-style: none;
+}
+.prices .card-body i{
+    color: #008A5E;
+    padding-right: 10px;
 }
