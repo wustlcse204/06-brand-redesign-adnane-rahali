@@ -1,3 +1,7 @@
+/* Whole Page */
+body{
+    background-image: url("./images/site-background.png");
+}
 /* navbar */
 /* Intro */
 #intro{
@@ -9,15 +13,13 @@
 /* hero 1 */
 .hero1{
     margin-top: 10%;
-    background-image: url("./images/hero111.png");
+    background-image: url("./images/hero1.jpg");
     background-size: cover;
-    border: 1px solid black;
 }
 .hero1 #content{
     padding-top: 10%;
     padding-bottom: 1%;
     padding-left: 1%;
-
 }
 .hero1 li{
     list-style: none;
@@ -44,7 +46,7 @@
 }
 .prices .card-body h6{
     font-weight: bold;
-    color: #7493BC;
+    color: #3E4756;
     font-size: 20px;
 
 }
@@ -54,4 +56,16 @@
 .prices .card-body i{
     color: #008A5E;
     padding-right: 10px;
+}
+
+/* Mobile */
+.mobile{
+    margin-top: 10%;
+    background-image: url("./images/iphone.jpg");
+    background-size: cover;
+}
+.mobile #content{
+    padding: 10% 1% 10% 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
 }
