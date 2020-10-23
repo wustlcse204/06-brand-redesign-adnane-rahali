@@ -13,7 +13,7 @@ body{
 /* hero 1 */
 .hero1{
     margin-top: 10%;
-    background-image: url("./images/hero1.jpg");
+    background-image: url("./images/hero1\ \(2\).jpg");
     background-size: cover;
 }
 .hero1 #content{
@@ -65,18 +65,38 @@ body{
     background-size: cover;
 }
 .mobile #content{
-    padding: 10% 1% 10% 1%;
+    padding: 5% 1% 10% 1%;
     padding-bottom: 1%;
     padding-left: 1%;
 }
 .mobile p{
     padding: 3% 3%;
 }
+/* hero 2 */
+.hero2{
+    margin-top: 10%;
+    background-image: url("./images/business.jpg");
+    background-size: cover;
+}
+.hero2 #content{
+    padding-top: 5%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+.hero2 li{
+    list-style: none;
+}
+.hero2 i{
+    padding-right: 20px;
+    color: #DEA01E;
+}
 /* Footer */
 .footer{
     margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
+    color: #604800;
+
 }
 .footer li{
     list-style: none;
@@ -89,11 +109,13 @@ body{
     border-left: 4px solid darkgray;
     height: 100px;
   }
-#footer-extra-links{
-    color: #604800;
-}
-#center-inside {
+.center-inside{
     margin: auto;
     display: block;
     text-align: center;
-  }
+}
+/* Mobile View */
+.mobile-view{
+    display: none;
+}
+
