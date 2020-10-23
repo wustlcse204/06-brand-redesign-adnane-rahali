@@ -1,3 +1,9 @@
+/* Optimized for iPhone X Screen */
+@media (max-width: 375px) {
+    .website-view {display: none;}
+    .mobile-view {display: contents !important;}
+}
+
 /* Whole Page */
 body{
     background-image: url("./images/site-background.png");
@@ -118,4 +124,6 @@ body{
 .mobile-view{
     display: none;
 }
-
+/* .website-view{
+    display: none;
+} */
