@@ -72,3 +72,28 @@ body{
 .mobile p{
     padding: 3% 3%;
 }
+/* Footer */
+.footer{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.footer li{
+    list-style: none;
+}
+#footer-icons li{
+    display: inline;
+    padding-left: 5%;
+}
+.vl {
+    border-left: 4px solid darkgray;
+    height: 100px;
+  }
+#footer-extra-links{
+    color: #604800;
+}
+#center-inside {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
