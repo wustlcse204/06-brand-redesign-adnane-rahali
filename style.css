@@ -3,12 +3,15 @@
     .website-view {display: none;}
     .mobile-view {display: contents !important;}
 }
-
 /* Whole Page */
 body{
     background-image: url("./images/site-background.png");
 }
 /* navbar */
+#left-nav li{
+    list-style: none;
+    display: inline;
+}
 /* Intro */
 #intro{
     margin-top: 10%;
@@ -99,8 +102,8 @@ body{
 /* Footer */
 .footer{
     margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     color: #604800;
 
 }
@@ -111,10 +114,13 @@ body{
     display: inline;
     padding-left: 5%;
 }
+/* Start of citation */
+/* the vertical line has been derived from this source:  https://www.w3schools.com/howto/howto_css_vertical_line.asp*/
 .vl {
     border-left: 4px solid darkgray;
     height: 100px;
   }
+/* End of citation */
 .center-inside{
     margin: auto;
     display: block;
@@ -124,6 +130,13 @@ body{
 .mobile-view{
     display: none;
 }
-/* .website-view{
-    display: none;
-} */
+footer li{
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    color: #604800;
+}
+footer{
+    text-align: center;
+    margin-top: 15%;
+}

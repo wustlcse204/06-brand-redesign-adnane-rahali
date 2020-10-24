@@ -5,6 +5,14 @@
   <meta charset="UTF-8" class="rennaissanceAEM64">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Start of citation -->
+  <!-- The collapsing menu as explained in bootstrap docs wasn't working. The following source ahs been checked; it shows these two additional script 
+    tags at the top of the page
+      1 - https://stackoverflow.com/questions/58766156/bootstrap-4-navbar-toggle-not-working-code-pasted-below-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- End of citation -->
+
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,36 +22,44 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-xl navbar-light bg-white">
-    <a class="navbar-brand"><img id="spectrum-icon" src="./images/spectrum-icon2.jpg"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Business
-            Services</button></li>
-        <li class="nav-item px-2"><button class="btn btn-lg btn-outline-primary px-3" type="submit"
-            style="font-weight: bold;">Spectrum Mobile</button></li>
-        <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">En
-            Español</button></li>
-        <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Support</button>
-        </li>
-      </ul>
-
-      <i class="fas fa-2x fa-user-alt px-4" style="color: #2a5c9e;"></i>
-      <i class="fas fa-2x fa-shopping-cart px-4" style="color: #2a5c9e;"></i>
-      <form class="form-inline ml-4 my-2 my-lg-0">
-        <input class="form-control mr-2" type="search" placeholder="Search" style="width: 300px;">
-        <button class="btn my-2 text-light" type="submit"
-          style="background-color: #2a5c9e; width: 100px;">Search</button>
-      </form>
-    </div>
-  </nav>
+  <!-- Start of citation  -->
+  <!-- The text content is derived from these two sources
+            1-  https://business.spectrum.com/
+            2-  https://official.spectrum.com/
+  -->
+  <!-- End of citation  -->
 
   <div class="website-view">
+    <nav class="navbar navbar-expand-xl navbar-light bg-white nav-for-large">
+      <a class="navbar-brand"><img id="spectrum-icon" src="./images/spectrum-icon2.jpg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#to-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row">
+        <ul class="nav navbar-nav mr-auto col-7" id="to-collapse">
+          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Business
+              Services</button></li>
+          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-primary px-3" type="submit"
+              style="font-weight: bold;">Spectrum Mobile</button></li>
+          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">En
+              Español</button></li>
+          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Support</button>
+          </li>
+        </ul>
+        <ul id="left-nav" class="col-5 list-group list-group-horizontal">
+          <li class="list-group-item border border-0"><i class="fas fa-2x fa-user-alt" style="color: #2a5c9e;"></i></li>
+          <li class="list-group-item border border-0"><i class="fas fa-2x fa-shopping-cart" style="color: #2a5c9e;"></i>
+          </li>
+          <li class="list-group-item border border-0">
+            <form class="form-inline">
+              <input class="form-control mr-2" type="search" placeholder="Search" style="width: 290px;">
+              <button class="btn text-light" type="submit"
+                style="background-color: #2a5c9e; width: 100px;">Search</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <div class="row" id="intro">
         <div class="col-6">
@@ -424,6 +440,21 @@
   </div>
 
   <div class="mobile-view">
+    <nav class="navbar navbar-light bg-white">
+      <a class="navbar-brand" href=""><img id="spectrum-icon" src="./images/spectrum-icon2.jpg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tocollapse"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="tocollapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="">Business Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Spectrum Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="">En Español</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Support</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <div id="intro">
         <div>
@@ -450,7 +481,8 @@
               </div>
             </div>
             <div class="text-center">
-              <button class="btn my-2 font-weight-bold text-light" type="submit" style="background-color: #f66200;">SHOP NOW</button>
+              <button class="btn my-2 font-weight-bold text-light" type="submit" style="background-color: #f66200;">SHOP
+                NOW</button>
             </div>
           </form>
         </div>
@@ -545,8 +577,8 @@
       </div>
     </div>
     <div class="container">
-      <div  id="intro">
-        <div >
+      <div id="intro">
+        <div>
           <div class="card border border-secondary">
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-light text-center" style="background-color: #2a5c9e;">
@@ -668,7 +700,21 @@
       </div>
     </div>
   </div>
-
+  <footer>
+    <ul>
+      <li>My Account</li>
+      <li>Spectrum Business</li>
+      <li class="text-primary">Spectrum Mobile</li>
+      <li>Support</li>
+    </ul>
+    <ul>
+      <li><i class="fab fa-2x fa-facebook-square"></i></li>
+      <li><i class="fab fa-2x fa-twitter-square"></i></li>
+      <li><i class="fab fa-2x fa-instagram-square"></i></li>
+      <li><i class="fab fa-2x fa-linkedin"></i></li>
+    </ul>
+    <p class="pl-4">@ 2020 Charter Communications. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
