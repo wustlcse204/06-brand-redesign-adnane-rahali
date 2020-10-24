@@ -1,31 +1,32 @@
-/* Optimized for iPhone X Screen */
+/* OPTIMIZED FOR iPHONE X */
 @media (max-width: 375px) {
     .website-view {display: none;}
     .mobile-view {display: contents !important;}
 }
-/* Whole Page */
+/* GENERAL STYLE */
 body{
     background-image: url("./images/site-background.png");
 }
-/* navbar */
+
+/* LARGE SCREEN NAVBAR */
 #left-nav li{
     list-style: none;
     display: inline;
 }
-/* Intro */
-#intro{
+/* CONTACT AND INTRO DIV */
+.intro{
     margin-top: 10%;
 }
-#intro input{
+.intro input{
     text-align: center;
 }
-/* hero 1 */
+/* FIRST HERO IMAGE */
 .hero1{
     margin-top: 10%;
     background-image: url("./images/hero1\ \(2\).jpg");
     background-size: cover;
 }
-.hero1 #content{
+.hero1 .content{
     padding-top: 10%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -37,7 +38,7 @@ body{
     padding-right: 20px;
     color: #DEA01E;
 }
-/* Prices */
+/* BUNDLES AND PRICES DIV */
 .prices{
     margin-top: 10%;
 }
@@ -67,7 +68,7 @@ body{
     padding-right: 10px;
 }
 
-/* Mobile */
+/* MOBILE AD DIVE */
 .mobile{
     margin-top: 10%;
     background-image: url("./images/iphone.jpg");
@@ -81,13 +82,13 @@ body{
 .mobile p{
     padding: 3% 3%;
 }
-/* hero 2 */
+/* SECOND HERO IMAGE */
 .hero2{
     margin-top: 10%;
     background-image: url("./images/business.jpg");
     background-size: cover;
 }
-.hero2 #content{
+.hero2 .content{
     padding-top: 5%;
     padding-bottom: 1%;
     padding-left: 1%;
@@ -99,13 +100,12 @@ body{
     padding-right: 20px;
     color: #DEA01E;
 }
-/* Footer */
+/* FOOTER (large screen view) */
 .footer{
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     color: #604800;
-
 }
 .footer li{
     list-style: none;
@@ -114,6 +114,7 @@ body{
     display: inline;
     padding-left: 5%;
 }
+
 /* Start of citation */
 /* the vertical line has been derived from this source:  https://www.w3schools.com/howto/howto_css_vertical_line.asp*/
 .vl {
@@ -121,12 +122,14 @@ body{
     height: 100px;
   }
 /* End of citation */
+
 .center-inside{
     margin: auto;
     display: block;
     text-align: center;
 }
-/* Mobile View */
+
+/* MOBILE VIEW*/
 .mobile-view{
     display: none;
 }
