@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" class="rennaissanceAEM64">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Start of citation -->
@@ -12,9 +12,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- End of citation -->
 
-  <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
 
   <title>Spectrum Internet</title>
 </head>
@@ -38,10 +44,10 @@
       </button>
       <div class="collapse navbar-collapse row">
         <ul class="nav navbar-nav mr-auto col-7" id="to-collapse">
-          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Business Services</button></li>
-          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-primary px-3" type="submit" style="font-weight: bold;">Spectrum Mobile</button></li>
-          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">En Español</button></li>
-          <li class="nav-item px-2"><button class="btn btn-lg btn-outline-secondary px-3" type="submit">Support</button>
+          <li class="nav-item px-2"><button class="btn btn-outline-secondary px-3" type="submit">Business Services</button></li>
+          <li class="nav-item px-2"><button class="btn btn-outline-primary px-3" type="submit" style="font-weight: bold;">Spectrum Mobile</button></li>
+          <li class="nav-item px-2"><button class="btn btn-outline-secondary px-3" type="submit">En Español</button></li>
+          <li class="nav-item px-2"><button class="btn btn-outline-secondary px-3" type="submit">Support</button>
           </li>
         </ul>
         <ul id="left-nav" class="col-5 list-group list-group-horizontal">
@@ -74,13 +80,13 @@
         </div>
         <div class="col-6 bg-light border border-secondary  bg-transparent">
           <form>
-            <input class="form-control my-4 border-dark" type="text" placeholder="Street Address">
+            <input class="form-control my-4 border-warning" type="text" placeholder="Street Address">
             <div class="row">
               <div class="col-6">
-                <input class="form-control my-4 border-dark" type="text" placeholder="Apt/Unit">
+                <input class="form-control my-4 border-warning" type="text" placeholder="Apt/Unit">
               </div>
               <div class="col-6">
-                <input class="form-control my-4 border-dark" type="text" placeholder="Zip Code">
+                <input class="form-control my-4 border-warning" type="text" placeholder="Zip Code">
               </div>
             </div>
             <div class="text-center">
@@ -247,7 +253,7 @@
             to be contacted within 24 hours, 8AM - 10PM ET, Mon-Fri.</p>
           <form>
             <div class="text-center">
-              <button class="btn my-2 font-weight-bold text-light" type="submit" style="background-color: #604800;">Submit Contract Information</button>
+              <button class="btn my-2 border border-warning font-weight-bold text-light" type="submit" style="background-color: #604800;">Submit Contract Information</button>
             </div>
           </form>
         </div>

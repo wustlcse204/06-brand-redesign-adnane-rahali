@@ -15,14 +15,14 @@ body{
 }
 /* CONTACT AND INTRO DIV */
 .intro{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .intro input{
     text-align: center;
 }
 /* FIRST HERO IMAGE */
 .hero1{
-    margin-top: 10%;
+    margin-top: 15%;
     background-image: url("./images/hero1\ \(2\).jpg");
     background-size: cover;
 }
@@ -40,7 +40,7 @@ body{
 }
 /* BUNDLES AND PRICES DIV */
 .prices{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .prices .card-header h6{
     font-weight: bold;
@@ -70,7 +70,8 @@ body{
 
 /* MOBILE AD DIV */
 .mobile{
-    margin-top: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     background-image: url("./images/iphone.jpg");
     background-size: cover;
 }
@@ -84,7 +85,7 @@ body{
 }
 /* SECOND HERO IMAGE */
 .hero2{
-    margin-top: 10%;
+    margin-top: 15%;
     background-image: url("./images/business.jpg");
     background-size: cover;
 }
@@ -102,7 +103,7 @@ body{
 }
 /* FOOTER (large screen view) */
 .footer{
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
     color: #604800;
